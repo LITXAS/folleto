@@ -45,7 +45,7 @@ section h2 {
 .product img {
     width: 100%;
     height: 200px; /* Fijamos la altura */
-    object-fit: cover; /* Esto garantiza que la imagen mantenga sus proporciones y se recorte si es necesario */
+    object-fit: cover; /* Mantiene proporciones y recorta si es necesario */
     border-bottom: 1px solid #ddd;
 }
 
@@ -60,21 +60,33 @@ section h2 {
     margin: 0 0 10px;
 }
 
-/* Media Queries for Responsive Design */
+/* Media Queries para diseño responsivo */
+@media (max-width: 1200px) {
+    .product {
+        width: 18%; /* Ajuste para pantallas medianas */
+    }
+}
+
 @media (max-width: 900px) {
     .product {
-        width: 20%;
+        width: 23%; /* Ajuste para pantallas más pequeñas */
     }
 }
 
 @media (max-width: 600px) {
     .product {
-        width: 25%;
+        width: 30%; /* Ajuste para tablets o pantallas pequeñas */
     }
 }
 
 @media (max-width: 400px) {
     .product {
-        width: 50%;
+        width: 48%; /* Ajuste para móviles */
+    }
+}
+
+@media (max-width: 320px) {
+    .product {
+        width: 100%; /* Ajuste para móviles más pequeños */
     }
 }
