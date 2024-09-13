@@ -55,14 +55,13 @@ section h2 {
     justify-content: space-between; /* Espacia el contenido dentro del producto */
     align-items: center;
     padding: 10px;
-    height: 350px; /* Altura fija para uniformidad */
+    height: auto; /* Ajusta la altura automáticamente */
 }
 
 .product img {
     width: 100%;
-    height: auto; /* Mantiene la proporción de la imagen */
-    max-height: 200px; /* Limita la altura de la imagen */
-    object-fit: cover; /* Asegura que la imagen mantenga sus proporciones */
+    max-height: 150px; /* Limita la altura máxima de la imagen */
+    object-fit: cover; /* Asegura que la imagen mantenga sus proporciones y se recorte si es necesario */
     border-bottom: 1px solid #ddd;
 }
 
@@ -116,4 +115,3 @@ footer {
 footer p {
     margin: 0;
 }
-
