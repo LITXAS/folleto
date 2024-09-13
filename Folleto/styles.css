@@ -13,7 +13,7 @@ header {
 }
 
 .container {
-    width: 80%;
+    width: 90%; /* Ajustado para un poco más de margen en pantallas grandes */
     margin: auto;
     overflow: hidden;
 }
@@ -48,8 +48,9 @@ section h2 {
     flex-direction: column;
     justify-content: center; /* Centra el contenido verticalmente */
     align-items: center; /* Centra el contenido horizontalmente */
-    height: 300px; /* Altura fija para centrar verticalmente */
-    margin: 0; /* Asegura que el margen se aplique correctamente */
+    height: auto; /* Ajusta la altura automáticamente */
+    min-height: 300px; /* Altura mínima para asegurar la consistencia */
+    padding: 10px; /* Espacio interno */
 }
 
 .product img {
