@@ -13,7 +13,7 @@ header {
 }
 
 .container {
-    width: 90%; /* Ajustado para un poco más de margen en pantallas grandes */
+    width: 90%; /* Un poco más de margen en pantallas grandes */
     margin: auto;
     overflow: hidden;
 }
@@ -38,7 +38,7 @@ section h2 {
 }
 
 .product {
-    width: calc(50% - 20px); /* Ajusta el ancho para dos productos por fila con margen */
+    width: calc(50% - 20px); /* Dos productos por fila en pantallas grandes */
     box-sizing: border-box;
     background: #fff;
     border: 1px solid #ddd;
@@ -75,18 +75,24 @@ section h2 {
 /* Media Queries for Responsive Design */
 @media (max-width: 900px) {
     .product {
-        width: calc(50% - 20px); /* Ajusta el ancho para dos productos por fila */
+        width: calc(50% - 20px); /* Dos productos por fila en pantallas medianas */
     }
 }
 
 @media (max-width: 600px) {
     .product {
-        width: calc(50% - 20px); /* Ajusta el ancho para dos productos por fila */
+        width: calc(50% - 20px); /* Dos productos por fila en pantallas pequeñas */
     }
 }
 
 @media (max-width: 400px) {
     .product {
-        width: 100%; /* Ajusta el ancho para una columna en pantallas más pequeñas */
+        width: 100%; /* Una columna en pantallas muy pequeñas */
+    }
+}
+
+@media (max-width: 300px) {
+    .product {
+        padding: 5px; /* Reduce el espacio interno en pantallas extremadamente pequeñas */
     }
 }
