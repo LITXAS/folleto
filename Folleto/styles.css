@@ -66,12 +66,12 @@ section h2 {
 .products {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px; /* Spacing between items */
   justify-content: center; /* Centering items horizontally */
 }
 
 .product {
-  width: calc(20% - 2%);
-  margin: 1%;
+  width: calc(25% - 20px); /* Adjust width for 4 columns with gap */
   box-sizing: border-box;
   background: #fff;
   border: 1px solid #ddd;
@@ -110,18 +110,18 @@ section h2 {
 /* Media Queries for Responsive Design */
 @media (max-width: 900px) {
   .product {
-    width: calc(25% - 2%);
+    width: calc(33.333% - 20px);
   }
 }
 
 @media (max-width: 600px) {
   .product {
-    width: calc(33.333% - 2%);
+    width: calc(50% - 20px);
   }
 }
 
 @media (max-width: 400px) {
   .product {
-    width: calc(50% - 2%);
+    width: calc(100% - 20px);
   }
 }
