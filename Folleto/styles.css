@@ -60,7 +60,7 @@ section h2 {
 
 .product img {
     width: 50%;
-    max-height: 200px; /* Limita la altura máxima de la imagen */
+    max-height: 350px; /* Limita la altura máxima de la imagen */
     object-fit: cover; /* Asegura que la imagen mantenga sus proporciones y se recorte si es necesario */
     border-bottom: 1px solid #ddd;
 }
