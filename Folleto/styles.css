@@ -33,12 +33,12 @@ section h2 {
 .products-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center; /* Centra los productos horizontalmente */
+    gap: 20px; /* Espacio entre productos */
 }
 
 .product {
-    width: 48%; /* Ajusta el ancho para permitir dos productos por fila con margen */
-    margin-bottom: 20px; /* Espacio entre filas */
+    width: calc(50% - 20px); /* Ajusta el ancho para dos productos por fila con margen */
     box-sizing: border-box;
     background: #fff;
     border: 1px solid #ddd;
@@ -68,13 +68,13 @@ section h2 {
 /* Media Queries for Responsive Design */
 @media (max-width: 900px) {
     .product {
-        width: 48%; /* Ajusta el ancho para permitir dos productos por fila */
+        width: calc(50% - 20px); /* Ajusta el ancho para dos productos por fila */
     }
 }
 
 @media (max-width: 600px) {
     .product {
-        width: 48%; /* Ajusta el ancho para permitir dos productos por fila */
+        width: calc(50% - 20px); /* Ajusta el ancho para dos productos por fila */
     }
 }
 
