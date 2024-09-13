@@ -1,21 +1,27 @@
+/* Estilos generales */
 body {
-    font-family: Serif, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #f4f4f4;
 }
 
 header {
-    background: #ffffff;
-    color: #000000;
+    background: #333;
+    color: #fff;
     padding: 20px;
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+}
+
 .container {
-    width: 90%; /* Un poco más de margen en pantallas grandes */
-    margin: auto;
-    overflow: hidden;
+    width: 90%;
+    max-width: 1200px; /* Ancho máximo para pantallas grandes */
+    margin: 0 auto;
+    padding: 20px;
 }
 
 section {
@@ -30,6 +36,7 @@ section h2 {
     text-align: center;
 }
 
+/* Cuadrícula de productos */
 .products-grid {
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +44,7 @@ section h2 {
 }
 
 .product {
-    width: calc(50% - 20px); /* Dos productos por fila en pantallas grandes */
+    flex: 1 1 calc(25% - 20px); /* Cuatro productos por fila en pantallas grandes */
     box-sizing: border-box;
     background: #fff;
     border: 1px solid #ddd;
@@ -45,18 +52,17 @@ section h2 {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra el contenido verticalmente dentro de la caja */
-    align-items: center; /* Centra el contenido horizontalmente dentro de la caja */
-    height: auto; /* Ajusta la altura automáticamente */
-    min-height: 300px; /* Altura mínima para asegurar la consistencia */
-    padding: 10px; /* Espacio interno */
+    justify-content: space-between; /* Espacia el contenido dentro del producto */
+    align-items: center;
+    padding: 10px;
+    height: 350px; /* Altura fija para uniformidad */
 }
 
 .product img {
     width: 100%;
-    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
-    max-height: 200px; /* Limita la altura máxima de la imagen */
-    object-fit: cover; /* Asegura que la imagen mantenga sus proporciones y se recorte si es necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 200px; /* Limita la altura de la imagen */
+    object-fit: cover; /* Asegura que la imagen mantenga sus proporciones */
     border-bottom: 1px solid #ddd;
 }
 
@@ -71,27 +77,43 @@ section h2 {
     margin: 0 0 10px;
 }
 
+.product .price {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
 /* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .product {
+        flex: 1 1 calc(33.333% - 20px); /* Tres productos por fila */
+    }
+}
+
 @media (max-width: 900px) {
     .product {
-        width: calc(50% - 20px); /* Dos productos por fila en pantallas medianas */
+        flex: 1 1 calc(50% - 20px); /* Dos productos por fila */
     }
 }
 
 @media (max-width: 600px) {
     .product {
-        width: calc(50% - 20px); /* Dos productos por fila en pantallas pequeñas */
+        flex: 1 1 calc(100% - 20px); /* Un producto por fila */
     }
 }
 
-@media (max-width: 400px) {
-    .product {
-        width: calc(100% - 20px); /* Una columna en pantallas pequeñas */
-    }
+/* Pie de página */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
-@media (max-width: 300px) {
-    .product {
-        padding: 5px; /* Reduce el espacio interno en pantallas extremadamente pequeñas */
-    }
+footer p {
+    margin: 0;
 }
+
