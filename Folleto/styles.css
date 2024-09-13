@@ -33,7 +33,6 @@ section h2 {
 .products-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centra los productos horizontalmente */
     gap: 20px; /* Espacio entre productos */
 }
 
@@ -46,8 +45,8 @@ section h2 {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra el contenido verticalmente */
-    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente dentro de la caja */
+    align-items: center; /* Centra el contenido horizontalmente dentro de la caja */
     height: auto; /* Ajusta la altura automáticamente */
     min-height: 300px; /* Altura mínima para asegurar la consistencia */
     padding: 10px; /* Espacio interno */
@@ -87,7 +86,7 @@ section h2 {
 
 @media (max-width: 400px) {
     .product {
-        width: 100%; /* Una columna en pantallas muy pequeñas */
+        width: calc(100% - 20px); /* Una columna en pantallas pequeñas */
     }
 }
 
