@@ -62,17 +62,14 @@ section h2 {
   border-radius: 5px;
 }
 
-/* Flexbox for product layout */
+/* Grid Layout for Products */
 .products {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Spacing between items */
-  justify-content: center; /* Centering items horizontally */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px; /* Space between items */
 }
 
 .product {
-  width: calc(25% - 20px); /* Adjust width for 4 columns with gap */
-  box-sizing: border-box;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -109,19 +106,13 @@ section h2 {
 
 /* Media Queries for Responsive Design */
 @media (max-width: 900px) {
-  .product {
-    width: calc(33.333% - 20px);
+  .products {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
   }
 }
 
 @media (max-width: 600px) {
-  .product {
-    width: calc(50% - 20px);
-  }
-}
-
-@media (max-width: 400px) {
-  .product {
-    width: calc(100% - 20px);
+  .products {
+    grid-template-columns: repeat(1, 1fr); /* 1 column */
   }
 }
