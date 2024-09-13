@@ -19,7 +19,7 @@ header h1 {
 
 .container {
     width: 90%;
-    max-width: 600px; /* Ancho máximo para pantallas grandes */
+    max-width: 700px; /* Ancho máximo para pantallas grandes */
     margin: 0 auto;
     padding: 20px;
 }
