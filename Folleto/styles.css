@@ -62,8 +62,14 @@ section h2 {
   border-radius: 5px;
 }
 
+/* Flexbox for product layout */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centering items horizontally */
+}
+
 .product {
-  display: inline-block;
   width: calc(20% - 2%);
   margin: 1%;
   box-sizing: border-box;
