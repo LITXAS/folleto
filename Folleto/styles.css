@@ -44,7 +44,12 @@ section h2 {
     border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
-    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    height: 300px; /* Altura fija para centrar verticalmente */
+    margin: 0; /* Asegura que el margen se aplique correctamente */
 }
 
 .product img {
