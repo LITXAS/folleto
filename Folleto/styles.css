@@ -13,7 +13,7 @@ header {
 }
 
 .container {
-    width: 80%;
+    width: 90%; /* Ajusta el contenedor para pantallas más pequeñas */
     margin: auto;
     overflow: hidden;
 }
@@ -31,9 +31,9 @@ section h2 {
 }
 
 .product {
-    display: inline-block;
-    width: 15%;
-    margin: 1%;
+    display: block; /* Cambia de inline-block a block para una mejor adaptación en móviles */
+    width: 100%; /* Cada producto ocupa el 100% del ancho del contenedor */
+    margin: 10px 0; /* Ajusta el margen para más espacio vertical entre productos */
     box-sizing: border-box;
     background: #fff;
     border: 1px solid #ddd;
@@ -50,43 +50,23 @@ section h2 {
 }
 
 .product h3 {
-    font-size: 18px;
+    font-size: 16px; /* Ajusta el tamaño de fuente para una mejor legibilidad en móviles */
     margin: 10px 0;
 }
 
 .product p {
-    font-size: 16px;
+    font-size: 14px; /* Ajusta el tamaño de fuente para una mejor legibilidad en móviles */
     color: #333;
     margin: 0 0 10px;
 }
 
 /* Media Queries para diseño responsivo */
-@media (max-width: 1200px) {
-    .product {
-        width: 18%; /* Ajuste para pantallas medianas */
-    }
-}
-
-@media (max-width: 900px) {
-    .product {
-        width: 23%; /* Ajuste para pantallas más pequeñas */
-    }
-}
-
 @media (max-width: 600px) {
     .product {
-        width: 30%; /* Ajuste para tablets o pantallas pequeñas */
+        margin: 10px 0; /* Ajusta el margen para dispositivos más pequeños */
     }
-}
 
-@media (max-width: 400px) {
-    .product {
-        width: 48%; /* Ajuste para móviles */
-    }
-}
-
-@media (max-width: 320px) {
-    .product {
-        width: 100%; /* Ajuste para móviles más pequeños */
+    .product img {
+        height: 180px; /* Ajusta la altura de la imagen para pantallas pequeñas */
     }
 }
