@@ -16,26 +16,25 @@
 
 /* El contenedor del dropdown */
 .dropdown {
-    position: fixed; /* Fijamos el contenedor en la pantalla */
-    top: 50%; /* Centrado vertical */
-    left: 50%; /* Centrado horizontal */
-    transform: translate(-50%, -50%); /* Ajuste para que quede exactamente en el centro */
-    z-index: 999; /* Asegura que el menú esté por encima de otros elementos */
+    position: relative; /* Necesario para que el dropdown-content se posicione correctamente debajo del botón */
+    display: inline-block;
 }
 
 /* El contenido del dropdown (inicialmente oculto) */
 .dropdown-content {
     display: none; /* Oculto por defecto */
-    position: absolute;
+    position: absolute; /* Permite que se superponga sobre otros elementos */
     background-color: #f9f9f9; /* Fondo claro para el menú */
-    min-width: 200px;
+    min-width: 200px; /* Ancho mínimo */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra suave */
     z-index: 1;
     border-radius: 5px; /* Bordes redondeados */
     overflow: hidden;
     opacity: 0; /* Oculto inicialmente */
     transform: translateY(-10px); /* Empieza un poco más arriba */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Transición suave para despliegue */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transición suave */
+    top: 100%; /* Alinea el menú justo debajo del botón */
+    left: 0; /* Alinea el menú con el borde izquierdo del botón */
 }
 
 /* Estilo para cada enlace dentro del dropdown */
