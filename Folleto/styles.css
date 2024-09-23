@@ -27,7 +27,7 @@
     border-radius: 5px; /* Bordes redondeados */
     overflow: hidden;
     opacity: 0; /* Oculto inicialmente */
-    transform: translateY(-20px); /* Empieza un poco más arriba */
+    transform: translateY(-50px); /* Empieza un poco más arriba */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Transición suave */
     top: 100%; /* Alinea el menú justo debajo del botón */
     right: 0; /* Alinea el menú con el borde derecho del botón */
