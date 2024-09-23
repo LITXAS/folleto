@@ -1,8 +1,5 @@
 .dropdown-content {
-    display: none; /* Ocultamos el menú por defecto */
     position: absolute; /* Permite que se superponga sobre otros elementos */
-    background-color: #f9f9f9; /* Color de fondo del recuadro */
-    min-width: 200px; /* Ancho mínimo del recuadro */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto de elevación */
     z-index: 1; /* Asegura que el menú esté encima de otros elementos */
     border-radius: 5px; /* Esquinas redondeadas */
