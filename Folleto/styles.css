@@ -1,3 +1,29 @@
+.dropdown-content {
+    display: none; /* Ocultamos el menú por defecto */
+    position: absolute; /* Permite que se superponga sobre otros elementos */
+    background-color: #f9f9f9; /* Color de fondo del recuadro */
+    min-width: 200px; /* Ancho mínimo del recuadro */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto de elevación */
+    z-index: 1; /* Asegura que el menú esté encima de otros elementos */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+.dropdown-content a {
+    color: #333; /* Color del texto */
+    padding: 12px 16px; /* Espaciado alrededor del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: block; /* Cada enlace ocupa toda la fila */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
+}
+
+/* Muestra el menú al pasar el mouse sobre el elemento contenedor */
+.dropdown:hover .dropdown-content {
+    display: block; /* Muestra el menú */
+}
+
 .instagram-link {
     position: absolute;
     right: 10px; /* Ajusta según sea necesario */
