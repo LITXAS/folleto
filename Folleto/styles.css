@@ -54,7 +54,7 @@
 .dropdown-content.show {
     display: block;
     opacity: 1; /* Se vuelve visible */
-    transform: translateY(25%); /* Baja suavemente a su lugar */
+    transform: translateY(15%); /* Baja suavemente a su lugar */
 }
 
 .instagram-link {
