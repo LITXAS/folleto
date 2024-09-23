@@ -17,7 +17,7 @@
 /* El contenedor del dropdown */
 .dropdown {
     position: fixed; /* Fijamos el contenedor en la pantalla */
-    top: 50%; /* Centrado vertical */
+    top: 100%; /* Centrado vertical */
     left: 50%; /* Centrado horizontal */
     transform: translate(-50%, -50%); /* Ajuste para que quede exactamente en el centro */
     z-index: 999; /* Asegura que el menú esté por encima de otros elementos */
