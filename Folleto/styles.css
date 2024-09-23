@@ -29,7 +29,10 @@
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra suave */
     z-index: 1;
     border-radius: 5px; /* Bordes redondeados */
-    overflow: hidden; /* Para recortar cualquier contenido que sobresalga */
+    overflow: hidden;
+    opacity: 0; /* Oculto inicialmente */
+    transform: translateY(-10px); /* Empieza un poco más arriba */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transición suave para despliegue */
 }
 
 /* Estilo para cada enlace dentro del dropdown */
@@ -51,6 +54,8 @@
 /* Muestra el menú al hacer clic */
 .dropdown-content.show {
     display: block;
+    opacity: 1; /* Se vuelve visible */
+    transform: translateY(0); /* Baja suavemente a su lugar */
 }
 
 .instagram-link {
