@@ -10,14 +10,11 @@
     transition: background-color 0.3s ease; /* Transición suave */
 }
 
-.dropbtn:hover {
-    background-color: #50b5b9; /* Color de fondo al pasar el ratón */
-}
-
-/* El contenedor del dropdown */
+/* Mover el botón hacia la izquierda */
 .dropdown {
     position: relative; /* Necesario para que el dropdown-content se posicione correctamente debajo del botón */
     display: inline-block;
+    left: -20px; /* Ajusta este valor según necesites moverlo más a la izquierda */
 }
 
 /* El contenido del dropdown (inicialmente oculto) */
