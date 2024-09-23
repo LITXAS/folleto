@@ -14,7 +14,6 @@
 .dropdown {
     position: relative; /* Necesario para que el dropdown-content se posicione correctamente debajo del botón */
     display: inline-block;
-    left: -20px; /* Ajusta este valor según necesites moverlo más a la izquierda */
 }
 
 /* El contenido del dropdown (inicialmente oculto) */
@@ -30,7 +29,7 @@
     opacity: 0; /* Oculto inicialmente */
     transform: translateY(-10px); /* Empieza un poco más arriba */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Transición suave */
-    top: 100%; /* Alinea el menú justo debajo del botón */
+    top: calc(100% + 5px); /* Alinea el menú justo debajo del botón con un pequeño margen */
     left: 0; /* Alinea el menú con el borde izquierdo del botón */
 }
 
@@ -56,6 +55,7 @@
     opacity: 1; /* Se vuelve visible */
     transform: translateY(0); /* Baja suavemente a su lugar */
 }
+
 
 .instagram-link {
     position: absolute;
