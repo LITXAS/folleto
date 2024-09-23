@@ -1,3 +1,14 @@
+.instagram-link {
+    position: absolute;
+    right: 10px; /* Ajusta según sea necesario */
+    top: 10px; /* Ajusta según sea necesario */
+}
+
+.instagram-icon {
+    width: 40px; /* Tamaño del ícono */
+    height: auto;
+}
+
 body {
     font-family: Serif, sans-serif;
     margin: 0;
@@ -33,62 +44,6 @@ section h2 {
     padding: 10px;
     margin: 0;
     text-align: center;
-}
-
-/* Estilos para el dropdown */
-.dropdown {
-    position: relative; /* Permite que el menú se posicione relativo a este contenedor */
-    display: inline-block; /* Permite que el dropdown se mantenga en línea */
-}
-
-.dropbtn {
-    background-color: #64C9CF; /* Color de fondo del botón */
-    color: white; /* Color del texto */
-    padding: 10px 16px; /* Espaciado interno */
-    border: none; /* Sin borde */
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */
-}
-
-/* Estilo del menú desplegable */
-.dropdown-content {
-    display: none; /* Ocultar por defecto */
-    position: absolute; /* Permite que se posicione sobre otros elementos */
-    background-color: #f9f9f9; /* Color de fondo del menú */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra */
-    z-index: 1; /* Asegura que el menú esté encima de otros elementos */
-    border-radius: 5px; /* Esquinas redondeadas */
-    padding: 10px; /* Espaciado interno del menú */
-    display: flex; /* Usar flexbox */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si es necesario */
-}
-
-.dropdown-content a {
-    color: #333; /* Color del texto */
-    padding: 12px 16px; /* Espaciado alrededor del texto */
-    text-decoration: none; /* Sin subrayado */
-    margin: 5px; /* Espaciado entre enlaces */
-    display: inline-block; /* Permite que los enlaces estén uno al lado del otro */
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
-}
-
-/* Muestra el menú al pasar el mouse sobre el elemento contenedor */
-.dropdown:hover .dropdown-content {
-    display: flex; /* Muestra el menú */
-}
-
-/* Estilo para el enlace de Instagram */
-.instagram-link {
-    position: absolute;
-    right: 10px; /* Ajusta según sea necesario */
-    top: 10px; /* Ajusta según sea necesario */
-}
-
-.instagram-icon {
-    width: 40px; /* Tamaño del ícono */
-    height: auto;
 }
 
 /* Cuadrícula de productos */
