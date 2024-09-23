@@ -1,11 +1,34 @@
+.dropdown-content {
+    display: none; /* Ocultamos el menú por defecto */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content.show {
+    display: block; /* Muestra el menú cuando tiene la clase 'show' */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mostrar el menú cuando se añade la clase 'show' */
+.dropdown-content.show {
+    display: block;
+}
+
 .instagram-link {
     position: absolute;
-    right: 10px; /* Ajusta según sea necesario */
-    top: 10px; /* Ajusta según sea necesario */
+    right: 50px; /* Ajusta según sea necesario */
+    top: 50px; /* Ajusta según sea necesario */
 }
 
 .instagram-icon {
-    width: 40px; /* Tamaño del ícono */
+    width: 70px; /* Tamaño del ícono */
     height: auto;
 }
 
@@ -44,33 +67,6 @@ section h2 {
     padding: 10px;
     margin: 0;
     text-align: center;
-}
-
-/* Estilo del dropdown */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 5px; /* Bordes redondeados */
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
 }
 
 /* Cuadrícula de productos */
