@@ -1,3 +1,7 @@
+.dropdown {
+    position: relative; /* Asegura que el menú se posicione relativo a este contenedor */
+}
+
 .dropdown-content {
     display: none; /* Ocultamos el menú por defecto */
     position: absolute; /* Permite que se superponga sobre otros elementos */
@@ -7,6 +11,8 @@
     border-radius: 5px; /* Esquinas redondeadas */
     padding: 10px; /* Espaciado interno del recuadro */
     display: flex; /* Establece un contenedor flexible */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas si es necesario */
+    top: 60px; /* Ajusta la posición del menú hacia abajo */
 }
 
 .dropdown-content a {
@@ -22,10 +28,10 @@
 
 /* Muestra el menú al pasar el mouse sobre el elemento contenedor */
 .dropdown:hover .dropdown-content {
-    display: block; /* Muestra el menú */
+    display: flex; /* Muestra el menú */
 }
 
-
+/* Estilo para el enlace de Instagram */
 .instagram-link {
     position: absolute;
     right: 10px; /* Ajusta según sea necesario */
@@ -37,6 +43,7 @@
     height: auto;
 }
 
+/* Estilos generales */
 body {
     font-family: Serif, sans-serif;
     margin: 0;
