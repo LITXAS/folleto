@@ -10,7 +10,7 @@
     transition: background-color 0.3s ease; /* Transición suave */
 }
 
-/* Mover el botón hacia la izquierda */
+/* El contenedor del dropdown */
 .dropdown {
     position: relative; /* Necesario para que el dropdown-content se posicione correctamente debajo del botón */
     display: inline-block;
@@ -29,14 +29,14 @@
     opacity: 0; /* Oculto inicialmente */
     transform: translateY(-10px); /* Empieza un poco más arriba */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Transición suave */
-    top: calc(200% + 50px); /* Alinea el menú justo debajo del botón con un pequeño margen */
+    top: 100%; /* Alinea el menú justo debajo del botón */
     left: 0; /* Alinea el menú con el borde izquierdo del botón */
 }
 
 /* Estilo para cada enlace dentro del dropdown */
 .dropdown-content a {
     color: #333; /* Color del texto */
-    padding: 12px 16px;
+    padding: 12px 16px; /* Espaciado interno */
     text-decoration: none; /* Sin subrayado */
     display: block;
     font-family: 'Arial', sans-serif;
