@@ -29,7 +29,7 @@
     opacity: 0; /* Oculto inicialmente */
     transform: translateY(-10px); /* Empieza un poco más arriba */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Transición suave */
-    top: calc(100% + 50px); /* Alinea el menú justo debajo del botón con un pequeño margen */
+    top: calc(200% + 50px); /* Alinea el menú justo debajo del botón con un pequeño margen */
     left: 0; /* Alinea el menú con el borde izquierdo del botón */
 }
 
