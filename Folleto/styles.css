@@ -53,7 +53,7 @@
 .dropdown-content.show {
     display: block;
     opacity: 1; /* Se vuelve visible */
-    transform: translateY(-150); /* Baja suavemente a su lugar */
+    transform: translateY(-100); /* Baja suavemente a su lugar */
 }
 
 
