@@ -1,4 +1,4 @@
-/* Estilo para el botón del dropdown */
+/* Estilo para el botón del dropdown */ 
 .dropbtn {
     background-color: #64C9CF; /* Color de fondo */
     color: white; /* Color del texto */
@@ -27,10 +27,11 @@
     border-radius: 5px; /* Bordes redondeados */
     overflow: hidden;
     opacity: 0; /* Oculto inicialmente */
-    transform: translateY(-000px); /* Empieza un poco más arriba */
+    transform: translateY(-50px); /* Empieza un poco más arriba */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Transición suave */
     top: 100%; /* Alinea el menú justo debajo del botón */
     right: 0; /* Alinea el menú con el borde derecho del botón */
+    margin-bottom: 10px; /* Agrega espacio debajo del contenido del dropdown */
 }
 
 /* Estilo para cada enlace dentro del dropdown */
@@ -53,8 +54,9 @@
 .dropdown-content.show {
     display: block;
     opacity: 1; /* Se vuelve visible */
-    transform: translateY(-200); /* Baja suavemente a su lugar */
+    transform: translateY(0); /* Baja suavemente a su lugar */
 }
+
 
 
 .instagram-link {
