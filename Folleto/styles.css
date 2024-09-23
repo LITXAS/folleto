@@ -27,7 +27,7 @@
     border-radius: 5px; /* Bordes redondeados */
     overflow: hidden;
     opacity: 0; /* Oculto inicialmente */
-    transform: translateY(-10px); /* Empieza un poco más arriba */
+    transform: translateY(-5px); /* Empieza un poco más arriba */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Transición suave */
     top: 100%; /* Alinea el menú justo debajo del botón */
     right: 0; /* Alinea el menú con el borde derecho del botón */
@@ -53,7 +53,7 @@
 .dropdown-content.show {
     display: block;
     opacity: 1; /* Se vuelve visible */
-    transform: translateY(-50); /* Baja suavemente a su lugar */
+    transform: translateY(-90); /* Baja suavemente a su lugar */
 }
 
 
