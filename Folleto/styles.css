@@ -29,7 +29,7 @@
     opacity: 0; /* Oculto inicialmente */
     transform: translateY(-000px); /* Empieza un poco más arriba */
     transition: transform 0.3s ease, opacity 0.3s ease; /* Transición suave */
-    top: 120%; /* Alinea el menú justo debajo del botón */
+    top: 100%; /* Alinea el menú justo debajo del botón */
     right: 0; /* Alinea el menú con el borde derecho del botón */
 }
 
@@ -53,7 +53,7 @@
 .dropdown-content.show {
     display: block;
     opacity: 1; /* Se vuelve visible */
-    transform: translateY(-100); /* Baja suavemente a su lugar */
+    transform: translateY(-200); /* Baja suavemente a su lugar */
 }
 
 
