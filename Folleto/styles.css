@@ -9,7 +9,7 @@
     color: #333; /* Color del texto */
     padding: 12px 16px; /* Espaciado alrededor del texto */
     text-decoration: none; /* Sin subrayado */
-    display: block; /* Cada enlace ocupa toda la fila */
+    display: flex; /* Cada enlace ocupa toda la fila */
 }
 
 .dropdown-content a:hover {
