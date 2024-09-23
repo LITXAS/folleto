@@ -1,11 +1,11 @@
 .instagram-link {
     position: absolute;
-    right: 10px; /* Ajusta según sea necesario */
-    top: 10px; /* Ajusta según sea necesario */
+    right: 50px; /* Ajusta según sea necesario */
+    top: 50px; /* Ajusta según sea necesario */
 }
 
 .instagram-icon {
-    width: 30px; /* Tamaño del ícono */
+    width: 70px; /* Tamaño del ícono */
     height: auto;
 }
 
